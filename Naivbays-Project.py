@@ -51,20 +51,20 @@ def plot_2D(data, target, target_names):
   
 plot_2D(irisData.data , irisData.target , irisData.target_names)
 
->>> from sklearn import naive_bayes 
->>> nb = naive_bayes.MultinomialNB(fit_prior=True)# un algo d'apprentissage >>> irisData = datasets.load_iris() 
->>> nb.fit(irisData.data[: -1], irisData.target[: -1]) 
->>> p31 = nb.predict([irisData.data[31]])
->>> print (p31) 
->>> plast = nb.predict([irisData.data[-1]]) 
->>> print (plast)
->>> p = nb.predict(irisData.data[:]) 
->>> print (p)
+ from sklearn import naive_bayes 
+ nb = naive_bayes.MultinomialNB(fit_prior=True)# un algo d'apprentissage >>> irisData = datasets.load_iris() 
+ nb.fit(irisData.data[: -1], irisData.target[: -1]) 
+ p31 = nb.predict([irisData.data[31]])
+ print (p31) 
+ plast = nb.predict([irisData.data[-1]]) 
+ print (plast)
+ p = nb.predict(irisData.data[:]) 
+ print (p)
 
->>> from sklearn import naive_bayes 
->>> nb = naive_bayes.MultinomialNB(fit_prior=True) 
->>> nb.fit(irisData.data[:99], irisData.target[:99]) 
->>> nb.predict(irisData.data[100:149])
+ from sklearn import naive_bayes 
+ nb = naive_bayes.MultinomialNB(fit_prior=True) 
+ nb.fit(irisData.data[:99], irisData.target[:99]) 
+ nb.predict(irisData.data[100:149])
 
 from sklearn import naive_bayes 
 nb = naive_bayes.MultinomialNB(fit_prior=True) 
